@@ -1,0 +1,30 @@
+f=open("one.txt","r")
+data=f.read()
+print("file content:",data)
+f.close()
+
+f=open("one.txt","r")
+data=f.read(10)
+print("file past:",data)
+f.close()
+
+f=open("one.txt","r")
+line1=f.readline()
+line2=f.readline()
+line3=f.readline()
+print("line 1:",line1)
+print("line 1:",line2)
+print("line 1:",line3)
+f.close()
+
+f=open("one.txt","r")
+lines=f.readlines()
+print("list of lines:",lines)
+print("number of lines:",len(lines))
+f.close()
+
+f=open("one.txt","r")
+lines=f.readlines()
+print(lines[1].strip())
+f.close()
+
